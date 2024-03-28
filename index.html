@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p id="demo"></p>
-<button onclick="myFunction()">Click me</button>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML += "caca <br>";
-}
+<h id='caca'></h>
+<div>
+  <label for="message">message :</label><br>
+  <input type="text" id="message" name="message"><br><br>
+  <input type="submit" value="Submit" onclick='apagnan(message)'>
+</div>
+<script src="https://kihtrak.com/cloud_variable/cloudify.min.js">
+  let cloud_arr = [" "," "];
+  function apagnan("t") {
+    cloud_arr.push(t);
+    document.GetElemenById('caca').innerHTML = 'cloud_arr'
+  }
 </script>
 </body>
 </html>
